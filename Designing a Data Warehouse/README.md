@@ -21,5 +21,14 @@ The most common example of a dimension table is time and location. Many reports 
 You can use a data warehouse to asertain how much does a company earn last month from, your New York store or a Store in London. This is a type of question that a warehouse should be able to answer from the data it has collected.
 
 ## Physical Design of Data Warehouse
+-- Diagram
+Lets find the relationship between the Sales Territory table and Geography table
 
+The relationship between the SalesTerritory table and Geography table is the SalesTerritoryKey column.
+
+Inorder to know what city or territory that sales happens, we will need to look at both the SalesTerritory table and Geography Table. But, what we can do is to create a view to make that easier.
+
+Aggregating data help us easily look at things like, for example, the total for sales profit revenue expenses. Doing so, prevents us from looking at the data line by line. So, creating view saves us time.
+
+Creating View in its own self doesn't improve SQL performance, except when an index is created of the view. Indexes improves the performance of the query that runs. 
 ## Designing Dimension Tables
