@@ -30,3 +30,11 @@ The data transformation that takes palce usually involves various operations, wh
 - It includes a set of built in task and transformation tools that they use for constructing packages and integration services, which is used for running and managing packages.
 - It comes with a graphical integration tool, which can be used to create solution without writing a single line of code if you prefer to write code you are welcome to do so. 
 
+### Using ETL with SSIS
+When setting up a data warehouse for the first time, a lot of the work is in the designing and building of the table structure that will hold the data. Once that's done, it typically doesn't change very often and therefore there's not a lot of maintenance work required.
+
+ETL is a very important part in the data warehouse process. The actual ETL process sometimes can be subjected to some changes and some maintenance based on data changes as well. So, when there is a change in data, the ETL process will react accordingly to those changes.
+
+A lot of the day to day work of the data warehouse administrator actually involves the ETL process. 
+
+For this project we will be using SSIS to create our ETL process. SSIS is a tool developed by Microsoft and SQL Server Integration Services is actually managed by another tool called SQL Server Data Tools. This tool integrates with Visual Studio, and it's used to build business intelligence solutions.
