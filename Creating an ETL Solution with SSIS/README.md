@@ -49,3 +49,10 @@ When we have a new that source that we need to integrate into our solution there
 - How often does a column have small or large value
 
 SSIS has some tools that can help us explore the data and answer these type of questions.
+
+### Introduction to Control flow in SSIS
+I worked on a control flow project using the loop container in SSIS.
+
+Also, checked out the foreach loop in SSIS
+
+Conditional statements is being declared using the expression task. With this you can implement and if then logic in SQL Server
