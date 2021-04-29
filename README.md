@@ -1,4 +1,4 @@
-# Desigining-a-Data-Warehouse
+# Data-Warehouse-Systems
 In this repository, I sahre an End to End BI & DW project done to improve my understanding of Data warehouse processes.
 
 The dataset is created by Microsoft a long time ago the fictitious multinational manufacturing company called adventure works and shipped the AdventureWorks database as part of SQL Server. The dataset still exist does exist, with nearly 20,000 customers, over 70,000 orders and 500 products there is a enough data for examples. 
