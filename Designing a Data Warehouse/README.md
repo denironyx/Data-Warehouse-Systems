@@ -32,3 +32,8 @@ Aggregating data help us easily look at things like, for example, the total for 
 
 Creating View in its own self doesn't improve SQL performance, except when an index is created of the view. Indexes improves the performance of the query that runs. 
 ## Designing Dimension Tables
+
+There are two main techniques for designing a dimension table
+- Star
+- Snowflakes
+
