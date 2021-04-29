@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/29/2021 8:09:44 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DENNIS"
+  DTS:CreatorName="DENNIS\Dee"
+  DTS:DTSID="{E8F49304-9060-4186-BFFB-7553E65744EE}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.166"
+  DTS:LocaleID="8192"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{4627B9F6-F7EC-45BB-8302-E5D3EE9F3D09}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[5.1 DataProfile.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{DB6C69A1-16F6-4293-BB94-629F7A0EAF87}"
+      DTS:ObjectName="5.1 DataProfile.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Dee\root\Learning\Courses\Data Engineering\[ CourseWikia.com ] Udemy - Data Warehouse Developer-SQL Server - ETL - SSIS - SSAS - SSRS - T-SQL\4. Creating an ETL Solution with SSIS\5.1 DataProfile.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DENNIS\SQLSERVER2019.AdventureWorksDW2014]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9D8AB120-2CC4-4B18-95D1-D2BB8C84EDE9}"
+      DTS:ObjectName="DENNIS\SQLSERVER2019.AdventureWorksDW2014">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DENNIS\SQLSERVER2019;Initial Catalog=AdventureWorksDW2014;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Profiling Task"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{F24D5D90-D2AC-4043-BA8E-C554EC7309F9}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling Task"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="5.1 DataProfile.txt"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{9D8AB120-2CC4-4B18-95D1-D2BB8C84EDE9}</DataSourceID>
+        <Table Schema="dbo" Table="DimCustomer" />
+        <Column IsWildCard="false" ColumnName="AddressLine1" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{9D8AB120-2CC4-4B18-95D1-D2BB8C84EDE9}</DataSourceID>
+        <Table Schema="dbo" Table="DimCustomer" />
+        <Column IsWildCard="false" ColumnName="AddressLine2" />
+      </ColumnNullRatioProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Data Profiling Task"
+          TopLeft="191,93" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
