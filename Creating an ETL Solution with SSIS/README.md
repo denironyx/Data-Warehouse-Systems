@@ -72,3 +72,10 @@ In some ETL process you only need to insert new rules, that is in areas where da
 - Setting break points in the Control Flow area
 
 Data flow tab doesn't have the concept of breakpoint. But, it can allow use see the data as it is flowing, causing the machine to pause while we view it as it is flowing. Which can be done by enabling the data viewer.
+
+### Logging SSIS Package event
+Logging is an important part of the overall data warehouse strategy. Since, it can start the ETL process automatically at a certain schedule time every day or week.
+
+So, when that package is running and there are issues, there are way one can detect or read a log to see what has gone wrong. Where there have been successes or failures. 
+
+We basically need a log that will capture everything as the package runs. This can be done using the SSIS >> logging features which creates the log of all the event.
