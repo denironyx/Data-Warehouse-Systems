@@ -79,3 +79,7 @@ Logging is an important part of the overall data warehouse strategy. Since, it c
 So, when that package is running and there are issues, there are way one can detect or read a log to see what has gone wrong. Where there have been successes or failures. 
 
 We basically need a log that will capture everything as the package runs. This can be done using the SSIS >> logging features which creates the log of all the event.
+
+### Handling errors in an SSIS Package
+
+When building an ETL solution you want to take into account errors that might arise from the data itself. Sometime one or more row might not be structured in the right format. Inorder to not allow this type of error stop your ETL process. It's advice able to handle the error before hand through redirecting those error rows in the data to another file so you can work on it after the process. 
