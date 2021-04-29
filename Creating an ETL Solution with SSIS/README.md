@@ -56,3 +56,14 @@ I worked on a control flow project using the loop container in SSIS.
 Also, checked out the foreach loop in SSIS
 
 Conditional statements is being declared using the expression task. With this you can implement and if then logic in SQL Server
+
+In a control flow an arrow basically is a precedent constraint. It controls what task runs after the current task based on success or failure
+
+### Implementing Data flow
+The Data Flow Task will enable me accomplish different tasks. With all of these task basically focuses on extracting, transforming or loading data.
+
+Every data flow task requires a source and a destination. In other words, its going to require a place to pull the data out of and the place to insert the data to.
+
+In Data flow the arrow represents data flowing from one task to another. The Blue arrow represents good data(data that was successfully read or transformed), while the RED arrow represent bad data or data that there have been an error in. 
+
+In some ETL process you only need to insert new rules, that is in areas where data may have changed. In orther situations you may have to delete everything that's in the table and completely reload the data. In this project we are going to Truncate a table and reload the data. The table Truncated will be reload from the flat file source.
