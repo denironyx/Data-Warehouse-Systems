@@ -38,3 +38,14 @@ ETL is a very important part in the data warehouse process. The actual ETL proce
 A lot of the day to day work of the data warehouse administrator actually involves the ETL process. 
 
 For this project we will be using SSIS to create our ETL process. SSIS is a tool developed by Microsoft and SQL Server Integration Services is actually managed by another tool called SQL Server Data Tools. This tool integrates with Visual Studio, and it's used to build business intelligence solutions.
+
+### Creating a new SSIS Project
+
+### Exploring Data Source
+When we have a new that source that we need to integrate into our solution there are some questions that needs to be asked about the data, which include:
+
+- What Data types are being used?
+- How often is a column null?
+- How often does a column have small or large value
+
+SSIS has some tools that can help us explore the data and answer these type of questions.
