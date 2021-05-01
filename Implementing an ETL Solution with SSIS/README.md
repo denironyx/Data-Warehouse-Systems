@@ -13,5 +13,9 @@ When we extract data from a data source, we sometime want all of the records fro
 There are three techniques of how we can determine which records that have been changed since the last extraction.
 
 - Adding a Datetime column to every table and use that datetime column to track when the last time the record was changed. This can be done using triggers or stored procedures to make sure you have accurate information in the last update column.
-- Change data capture: Using the SQL data agent to write data 
-- Change tracking
+- Change data capture: Using the SQL server agent to write data to a new set of tables. When you do this, you have an original set of tables that won't be modified. The server automatically creates a new set of table that will hold information about data that have been changed recently
+- Change tracking: This only stores key of changed row
+
+To Enable the change data capture in SQL Server, an SQL query needs to be run. The script - `change_data_capture.sql`
+
+To Enable Change Tracking we need to do so on the database level and also at the individual table level
