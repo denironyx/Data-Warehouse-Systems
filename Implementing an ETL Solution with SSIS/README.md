@@ -18,4 +18,12 @@ There are three techniques of how we can determine which records that have been 
 
 To Enable the change data capture in SQL Server, an SQL query needs to be run. The script - `change_data_capture.sql`
 
-To Enable Change Tracking we need to do so on the database level and also at the individual table level
+To Enable Change Tracking we need to do so on the database level and also at the individual table level this can be done using a SQL script or you can do this via SQL Server Management Studio `change_data_tracking.sql` and here is the script to find the changes
+``` USE [AdventureWorksDW2014]
+
+-- Find the column key of the row changed
+SELECT * 
+FROM CHANGETABLE(CHANGES [dbo].[DimAccount], 0) AS T; 
+```
+
+The change data capture gives you more information, by showing you the row before the change and after the changes have be made to the row. However, with the change tracking it gives us the clue of what is changed and then the user can go back into the data and check where it occurred.
