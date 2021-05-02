@@ -27,3 +27,26 @@ FROM CHANGETABLE(CHANGES [dbo].[DimAccount], 0) AS T;
 ```
 
 The change data capture gives you more information, by showing you the row before the change and after the changes have be made to the row. However, with the change tracking it gives us the clue of what is changed and then the user can go back into the data and check where it occurred.
+
+### Loading Modified Data
+- Static and Dynamic Dimension Tables - Some of the data that we have in the dimensioned tables may be static, others may be dynamic. Dynamic data can change from time to time e.g Dimension tables related to time.
+- Business needs to capture new data and date - Sometimes when a dimension data changes, we need to keep record of the new data, the old data and the date on which it changed. E.g, if we have a list of products and each productr belonged to a certain category and at some point we decided to move certain products from one category to a different category, we need to keep track of the old category, the new category and the date on which it moved that way. That way when we run historical reports based on categories, we can make sure the right products fall into the right place. 
+- Slowly changing dimensions - When we have these dimensions that need to change and we need to store the old new data we typically call it a slowly changing dimension
+    - Type one - don't keep a track of the whole data, just overwrites the previous data. EG, phone number and easiest to implement.
+        - Easiest to implement
+        - Data loss
+    - Type two - Implementing this change requires adding a new record to the same table. So we have one record for the original data and a new record with the updated data. 
+        - Handles unlimited number of changes
+        - Creates more records in a table
+        - Requires modification to the primary key
+        - Dimension info can span multiple rows
+        - Mostly used
+    - Type three - requires additional columns, where one column will hold the old city, one column will hold the current or new city and also we have the effective date on which the change happened.
+        - Limited number of changes
+        - Creates wider tables
+        - All data stored in one record
+
+ 
+
+
+
