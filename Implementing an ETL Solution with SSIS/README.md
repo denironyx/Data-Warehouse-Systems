@@ -32,21 +32,46 @@ The change data capture gives you more information, by showing you the row befor
 - Static and Dynamic Dimension Tables - Some of the data that we have in the dimensioned tables may be static, others may be dynamic. Dynamic data can change from time to time e.g Dimension tables related to time.
 - Business needs to capture new data and date - Sometimes when a dimension data changes, we need to keep record of the new data, the old data and the date on which it changed. E.g, if we have a list of products and each productr belonged to a certain category and at some point we decided to move certain products from one category to a different category, we need to keep track of the old category, the new category and the date on which it moved that way. That way when we run historical reports based on categories, we can make sure the right products fall into the right place. 
 - Slowly changing dimensions - When we have these dimensions that need to change and we need to store the old new data we typically call it a slowly changing dimension
-    - Type one - don't keep a track of the whole data, just overwrites the previous data. EG, phone number and easiest to implement.
+    - Type 1 - don't keep a track of the whole data, just overwrites the previous data. EG, phone number and easiest to implement.
         - Easiest to implement
         - Data loss
-    - Type two - Implementing this change requires adding a new record to the same table. So we have one record for the original data and a new record with the updated data. 
+    - Type 2 - Implementing this change requires adding a new record to the same table. So we have one record for the original data and a new record with the updated data. 
         - Handles unlimited number of changes
         - Creates more records in a table
         - Requires modification to the primary key
         - Dimension info can span multiple rows
         - Mostly used
-    - Type three - requires additional columns, where one column will hold the old city, one column will hold the current or new city and also we have the effective date on which the change happened.
+    - Type 3 - requires additional columns, where one column will hold the old city, one column will hold the current or new city and also we have the effective date on which the change happened.
         - Limited number of changes
         - Creates wider tables
         - All data stored in one record
 
- 
+### Working with changing Dimensions
+- Type 0
+    - Don't change anything
+    - Rarely used
+    - Same level of data loss as Type 1
+- Type 4
+    - Copy old record into a separate history table
+    - Update record in production table to hold the current data
+    - Similar to Type 2
+    - The records are in separate tables, unlike type 2 where they are two records in the same table
+- Type 5
+    - Write new record into a separate current table
+    - Keep copy of old data in the original table
+    - Similar to Type 2 and 4
+    - Less demanding as compare to type 4
+    - Makes additional to other tables.
+- Type 6
+    - Combination fo Type 2 and Type 3
+    - Creates a new record in the same table just like Type 2
+    - Adds a column for current value like Type 3
+    - Makes a table bigger and wider table
+- Type 7
+    - Combination of Type 3 and Type 5
+    - Creates a new record in different table like Type 5
+    - Adds a column for current value like type 3
+
 
 
 
