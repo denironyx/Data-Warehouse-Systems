@@ -8,6 +8,8 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
+        <ServerName>DENNIS\SQLSERVER2019</ServerName>
+        <PathOnServer>/SSISDB/Reseller/Integration Services Project1</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
