@@ -61,3 +61,23 @@ This link helped me fix it - http://www.vdwielen.net/2018/12/ssis-deployment-err
 -  Give the new job a name
 -  Then provide the steps for `SQL Server Integration Service Package`  of the Reseller Package
 -  Create new scheduele for the time the job can take place recurring
+
+### Configuring Advanced SSIS Settings
+To change the Encryption Algorithm Name the catalog has to be in a single user mode.
+```
+ALTER DATABASE SSISDB
+SET SINGLE_USER
+WITH ROLLBACK IMMEDIATE;
+
+----------------------------------------
+
+USE SSISDB 
+EXEC catalog.configure_catalog  @property_name='Encryption_Algorithm', @property_value='TRIPLE_DES_3KEY'; 
+
+---------------------------------------------------
+
+ALTER DATABASE SSISDB
+SET MULTI_USER;
+
+```
+Learn more here -https://programmersought.com/article/79824252060/
