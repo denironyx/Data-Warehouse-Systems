@@ -52,3 +52,12 @@ OK
 ------------------------------
 
 ```
+
+This link helped me fix it - http://www.vdwielen.net/2018/12/ssis-deployment-error-locale-id-lcid.html
+
+### Execute a package with SQL Server Agent
+-  Create new jobs, within the SQL Server Agent
+   -  A job is basically a unit of work in SQL Server agent. It's executed as a whole and connected to a schedule or different schedule. 
+-  Give the new job a name
+-  Then provide the steps for `SQL Server Integration Service Package`  of the Reseller Package
+-  Create new scheduele for the time the job can take place recurring
