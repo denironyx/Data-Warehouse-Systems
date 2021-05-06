@@ -19,3 +19,8 @@ It very common when we import data from morethan one source there is likely to b
 The tool can make it easy to find that that doesn't match and infer some suggestions as well. With the option to approve or reject such changes. 
 
 Data quality services can also be used to find duplicate data. When import data from multiple sources, we could end up with some of them being duplicates. 
+
+- Imports can result in duplicate
+- Records could be similar but not exact eg. same name but slightly different email or phone number. 
+
+Data quality services can help us automate this process to help us find duplicate data.
