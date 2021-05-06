@@ -13,3 +13,9 @@ Data quality services also enables data cleansing by using cloud based reference
     -   DQS_STAGING: Contains the staging area where you can copy your source data to perform DQS operations, and then export your processed data.
 -   Data Quality Client: Is a standalone application that enables you to connect to Data Quality Server, and provides you with a highly-intuitive graphical user interface to perform data-quality operations and other administrative tasks related to DQS.
 
+### Cleansing data
+It very common when we import data from morethan one source there is likely to be error in the data. This error could be anything.
+
+The tool can make it easy to find that that doesn't match and infer some suggestions as well. With the option to approve or reject such changes. 
+
+Data quality services can also be used to find duplicate data. When import data from multiple sources, we could end up with some of them being duplicates. 
