@@ -24,3 +24,5 @@ Data quality services can also be used to find duplicate data. When import data 
 - Records could be similar but not exact eg. same name but slightly different email or phone number. 
 
 Data quality services can help us automate this process to help us find duplicate data.
+
+### How to use Data Quality Services in an SSIS data flow.

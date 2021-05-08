@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Data Quality", "Data Quality\Data Quality.dtproj", "{466CCF6B-9F1C-410A-9864-50F552727179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{466CCF6B-9F1C-410A-9864-50F552727179}.Development|Default.ActiveCfg = Development
+		{466CCF6B-9F1C-410A-9864-50F552727179}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9B4DD96-124D-4B88-A442-4F76B9187294}
+	EndGlobalSection
+EndGlobal
