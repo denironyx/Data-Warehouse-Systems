@@ -17,3 +17,6 @@ Noted: Having a data warehouse doesn't give us a complete business intelligence 
 
 -   Reporting: Microsoft SQL Server Reporting Services - SSRS
 -   Analysis: Microsoft SQL Server Analysis Services - SSAS
+
+### SSRS - SQL Server Reporting Services
+Here I will be creating a basic report and I'm going to do that based on a view. So, what I will be doing first is create the view in the data warehouse
