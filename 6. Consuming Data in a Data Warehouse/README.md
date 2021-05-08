@@ -1,0 +1,19 @@
+## Introduction to Business Intelligence => BI
+Business intelligence is a very old concept it dates back to over 150 years Old. Which was once originally defined as gaining a competitive advantage by ability to gather information more quickly than your competitor.
+
+Business intelligence definition varies from one vendor to another, each of them trying frame the problem that their product can solve. There are some characteristics among all the definition of BI which include:
+-   Find useful information in raw data
+-   Use data to support operational decisions
+-   Measure health and success of business
+-   Perform simulations on data to predict future outcome
+
+Data Source for Business Intelligence
+-   Real time stream - stock market
+-   Individual documents (rare and time consuming)
+-   Transactional database : Won't perform very well, when report are being run in the database.
+-   Data Warehouse - Business intelligence solution needs to involve data warehouse.
+
+Noted: Having a data warehouse doesn't give us a complete business intelligence solution needs 
+
+-   Reporting: Microsoft SQL Server Reporting Services - SSRS
+-   Analysis: Microsoft SQL Server Analysis Services - SSAS
