@@ -23,3 +23,10 @@ Here I will be creating a basic report and I'm going to do that based on a view.
 
 ### SSAS - SQL Server Analysis Services
 I will start by creating a data cube - A data cube is a three dimensional or four dimensional or even five dimensional structure that stores facts organized by dimension. It also allows for the quick retrieval of the data and some increased performance in processing basic mathematical functions like SUM's averages, minimums and maximums.
+
+The arrow of a data cube are representing the relationship between the tables.
+Error
+```
+Severity	Code	Description	Project	File	Line	Suppression State Error		The project could not be deployed to the 'DENNIS\SQLSERVER2019' server because of the following connectivity problems : A connection cannot be made to redirector. Ensure that 'SQL Browser' service is running. To verify or update the name of the target server, right-click on the project in Solution Explorer, select Project Properties, click on the Deployment tab, and then enter the name of the server.			0
+```
+- Trouble shoot error - https://jimsalasek.com/2017/08/31/how-to-install-ssas-sql-server-analysis-services/

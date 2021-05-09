@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>DENNIS\SQLSERVER2019</TargetServer>
         <TargetDatabase>MultidimensionalProject1</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
