@@ -27,3 +27,9 @@ This is an accronym for:
 - Update: Update existing records inside a database
 - Delete: Delete records from the database
 The CRUD is the most popular and basic operation that is performed on any database system.
+
+### SQL Server Data Types:
+A data type refers to the type of data that can be stored in a database table column. Examples includes
+-   Strings(text): A string is basically a text
+-   Date and Time
+-   Numeric, and others
