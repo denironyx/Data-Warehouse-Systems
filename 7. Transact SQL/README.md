@@ -19,3 +19,11 @@
 - Foreign Key: A foreign key, on the other hand, is used is like a primary key to reference a primary key in another table. For example, if Table A has a primary key and Table B has a primary key, too. So you can have the primary key from table two acting as a foreign key in table one. Likewise, you can have the primary key in table two acting as a foreign key in table two. 
 - Relational Database: is a database with related tables.
 - Relational Database Management System (RDBMS): Is a software that manages database. e.g Oracle, Microsoft SQL, MYSQL
+
+### What is CRUD
+This is an accronym for:
+- Create: Create objects like databases and tables
+- Read: Retrieve and read records from database
+- Update: Update existing records inside a database
+- Delete: Delete records from the database
+The CRUD is the most popular and basic operation that is performed on any database system.
