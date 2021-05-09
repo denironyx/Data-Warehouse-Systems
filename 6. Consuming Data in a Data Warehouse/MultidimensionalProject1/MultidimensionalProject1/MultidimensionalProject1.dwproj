@@ -8,12 +8,12 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Adventure Works DW2014 Cube.cube</Name>
-      <FullPath>Adventure Works DW2014 Cube.cube</FullPath>
+      <Name>Adventure Works DW2014 Cube 1.cube</Name>
+      <FullPath>Adventure Works DW2014 Cube 1.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Adventure Works DW2014 Cube.partitions</Name>
-          <FullPath>Adventure Works DW2014 Cube.partitions</FullPath>
+          <Name>Adventure Works DW2014 Cube 1.partitions</Name>
+          <FullPath>Adventure Works DW2014 Cube 1.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
@@ -42,6 +42,10 @@
     <ProjectItem>
       <Name>Adventure Works DW2014 Data Source View.dsv</Name>
       <FullPath>Adventure Works DW2014 Data Source View.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MultidimensionalProject1.dsv</Name>
+      <FullPath>MultidimensionalProject1.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>

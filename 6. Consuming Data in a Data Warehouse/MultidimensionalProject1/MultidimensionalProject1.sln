@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "MultidimensionalProject1", "MultidimensionalProject1\MultidimensionalProject1.dwproj", "{499D98E5-0823-417D-8298-5EC3B496CFCC}"
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "MultidimensionalProject1", "MultidimensionalProject1\MultidimensionalProject1.dwproj", "{C5E86BF0-CB15-4C3B-BA3B-F0A0808953F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{499D98E5-0823-417D-8298-5EC3B496CFCC}.Development|Default.ActiveCfg = Development
-		{499D98E5-0823-417D-8298-5EC3B496CFCC}.Development|Default.Build.0 = Development
-		{499D98E5-0823-417D-8298-5EC3B496CFCC}.Development|Default.Deploy.0 = Development
+		{C5E86BF0-CB15-4C3B-BA3B-F0A0808953F9}.Development|Default.ActiveCfg = Development
+		{C5E86BF0-CB15-4C3B-BA3B-F0A0808953F9}.Development|Default.Build.0 = Development
+		{C5E86BF0-CB15-4C3B-BA3B-F0A0808953F9}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A481517C-C087-45E7-AEC5-FFD6FAD6BC6D}
+		SolutionGuid = {FC3C2B5F-C8DA-434C-B675-77D5E994187E}
 	EndGlobalSection
 EndGlobal
