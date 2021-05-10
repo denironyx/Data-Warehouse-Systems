@@ -33,3 +33,22 @@ A data type refers to the type of data that can be stored in a database table co
 -   Strings(text): A string is basically a text
 -   Date and Time
 -   Numeric, and others
+
+### Create a new Database USING T-SQL
+```
+CREATE DATABASE demoDB;
+```
+
+### Create a new Table using T-SQL
+```
+USE demoDB
+GO
+
+CREATE Table dbo.Products
+	(ProductID int PRIMARY KEY NOT NULL,
+	ProductName varchar(25) NOT NULL,
+	Price money NULL,
+	ProductDescription varchar(max) NULL)
+GO
+```
+Note the Keyword GO separates statements when more than one statement is submitted in a single batch. Go is optional when the batch contains only on statement.
