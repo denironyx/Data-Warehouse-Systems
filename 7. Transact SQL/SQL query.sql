@@ -80,3 +80,8 @@ GO
 -- Drop a Database
 DROP DATABASE demoDB;
 GO
+
+-- Restore Database
+RESTORE DATABASE demoDB
+FROM DISK = 'C:\Users\Dee\root\Projects\personal_real_projects\Data-Warehouse-Systems\7. Transact SQL\demoDB_full.bak'
+GO

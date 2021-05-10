@@ -176,3 +176,10 @@ DROP DATABASE demoDB;
 GO
 ```
 NOTE: You can't drop a database when it is selected or active.
+
+### Restore Database
+```
+RESTORE DATABASE demoDB
+FROM DISK = 'C:\Users\Dee\root\Projects\personal_real_projects\Data-Warehouse-Systems\7. Transact SQL\demoDB_full.bak'
+GO
+```
