@@ -169,3 +169,10 @@ USE demoDB
 DROP TABLE Products;
 GO
 ```
+
+### Drop a Database
+```
+DROP DATABASE demoDB;
+GO
+```
+NOTE: You can't drop a database when it is selected or active.

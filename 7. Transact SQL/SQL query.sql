@@ -76,3 +76,7 @@ GO
 USE demoDB
 DROP TABLE Products;
 GO
+
+-- Drop a Database
+DROP DATABASE demoDB;
+GO
