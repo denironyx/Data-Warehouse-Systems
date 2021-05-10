@@ -145,7 +145,7 @@ TO DISK = 'C:\Users\Dee\root\Projects\personal_real_projects\Data-Warehouse-Syst
 GO
 ```
 
-### Deleting Data from a Data
+### Deleting Data from a Database
 ```
 -- Deleting DATA
 USE demoDB
@@ -156,3 +156,16 @@ GO
 ```
 NOTE: The WHERE clause specifies which record(s) should be deleted. If you omit the WHERE clause, all records in the table will be deleted!
 
+### Truncating a database
+```
+USE demoDB
+TRUNCATE TABLE Products;
+GO
+```
+
+### Drop a database table
+```
+USE demoDB
+DROP TABLE Products;
+GO
+```

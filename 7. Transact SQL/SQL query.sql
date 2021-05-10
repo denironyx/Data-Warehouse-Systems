@@ -67,3 +67,12 @@ USE demoDB
 DELETE FROM Products
 WHERE ProductID = 4
 
+-- Truncate
+USE demoDB
+TRUNCATE TABLE Products;
+GO
+
+-- DROP a Database Table
+USE demoDB
+DROP TABLE Products;
+GO
