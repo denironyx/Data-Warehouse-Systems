@@ -131,3 +131,16 @@ UPDATE dbo.Products
 GO
 ```
 NOTE: Be careful when updating records in a table! Notice the WHERE clause in the UPDATE statement. The WHERE clause specifies which record(s) that should be updated. If you omit the WHERE clause, all records in the table will be updated.
+
+### Backing up a database
+There are different types of database backups that can be performed on an SQL Server database.
+- A full backup: It will backup the entire database including the transaction logs to begin.
+NOTE: Always back up the database to a different drive than the actual database. Then, if you get a disk crash, you will not lose your backup file along with the database
+
+```
+USE demoDB
+
+BACKUP DATABASE demoDB
+TO DISK = 'C:\Users\Dee\root\Projects\personal_real_projects\Data-Warehouse-Systems\7. Transact SQL\demoDB_full.bak'
+GO
+```
