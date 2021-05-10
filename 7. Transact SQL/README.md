@@ -52,3 +52,17 @@ CREATE Table dbo.Products
 GO
 ```
 Note the Keyword GO separates statements when more than one statement is submitted in a single batch. Go is optional when the batch contains only on statement.
+
+### Inserting Data into Table Using Transact-SQL (T-SQL)
+USE demoDB
+GO
+
+INSERT INTO dbo.Products(ProductID, ProductName, Price, ProductDescription)
+
+VALUES
+
+	(1, 'Clamp', 12.48, 'Workbench clamp'),
+	(2,	'Screwdriver', 7.99, 'Flat head'),
+	(3,	'Tire Bar', 10.99, 'Tool for changing tires')
+
+GO
