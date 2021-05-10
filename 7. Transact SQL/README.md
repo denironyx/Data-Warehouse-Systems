@@ -54,7 +54,7 @@ GO
 Note the Keyword GO separates statements when more than one statement is submitted in a single batch. Go is optional when the batch contains only on statement.
 
 ### Inserting Data into Table Using Transact-SQL (T-SQL)
-USE demoDB
+```USE demoDB
 GO
 
 INSERT INTO dbo.Products(ProductID, ProductName, Price, ProductDescription)
@@ -66,3 +66,13 @@ VALUES
 	(3,	'Tire Bar', 10.99, 'Tool for changing tires')
 
 GO
+```
+### Reading Data from a Table using T-SQL
+```USE demoDB
+GO
+
+SELECT ProductID, Products.ProductName, Products.Price, ProductDescription
+	FROM Products
+    WHERE Price < 11
+GO
+```
