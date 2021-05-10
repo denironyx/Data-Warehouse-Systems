@@ -76,3 +76,18 @@ SELECT ProductID, Products.ProductName, Products.Price, ProductDescription
     WHERE Price < 11
 GO
 ```
+
+### What is a View
+-   A view is a virtual table based on the result-set of an SQL Statement. It contains row and columns just like real tables.
+-   Views are stored SELECT statement that can be queried like tables.
+-   View can consists of one or more tables.
+-   Data in a view is usually up to date. 
+
+```
+-- Create a view
+CREATE VIEW vm_Names
+	AS
+	SELECT ProductName, Price 
+		FROM Products;
+GO
+```
