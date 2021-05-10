@@ -117,3 +117,17 @@ GO
 ```
 
 ### Updating Data using T-SQL
+```
+--- Updating the Database
+USE demoDB
+GO
+
+SELECT * FROM Products
+GO
+
+UPDATE dbo.Products
+	SET ProductName = 'Flat Head Screwdriver'
+	WHERE ProductID = 2
+GO
+```
+NOTE: Be careful when updating records in a table! Notice the WHERE clause in the UPDATE statement. The WHERE clause specifies which record(s) that should be updated. If you omit the WHERE clause, all records in the table will be updated.
