@@ -144,3 +144,15 @@ BACKUP DATABASE demoDB
 TO DISK = 'C:\Users\Dee\root\Projects\personal_real_projects\Data-Warehouse-Systems\7. Transact SQL\demoDB_full.bak'
 GO
 ```
+
+### Deleting Data from a Data
+```
+-- Deleting DATA
+USE demoDB
+
+DELETE FROM Products
+WHERE ProductID = 4
+GO
+```
+NOTE: The WHERE clause specifies which record(s) should be deleted. If you omit the WHERE clause, all records in the table will be deleted!
+

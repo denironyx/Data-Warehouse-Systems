@@ -60,3 +60,10 @@ USE demoDB
 BACKUP DATABASE demoDB
 TO DISK = 'C:\Users\Dee\root\Projects\personal_real_projects\Data-Warehouse-Systems\7. Transact SQL\demoDB_full.bak'
 GO
+
+-- Deleting DATA
+USE demoDB
+
+DELETE FROM Products
+WHERE ProductID = 4
+
