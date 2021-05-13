@@ -8,3 +8,9 @@ Steps in ETL are classified into 3 parts:
 -   Load include all of the process of loading the data into a target system. This part includes several processors like surrogate management, table management and several other processors.
 
 You can load the data into a data warehouse or a data mart.
+
+In an organization data is usually stored in two types of databases.
+1. Operational Database
+2. Datawarehouse, but system store data but they serve different purposes
+
+An operational database stores realtime information about one particular part of a business e.g. In another hand a data warehouse pulls data from different sources for the purpose of analytics and reporting
